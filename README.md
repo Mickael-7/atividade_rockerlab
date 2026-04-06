@@ -23,9 +23,9 @@ Landing (CSVs + API)
 
 ```
 ├── 00_Preparando_Ambiente.ipynb          # Criação do catálogo, schemas e volume
-├── 01_Landing_To_Bronze.ipynb            # Ingestão dos CSVs e API do BCB
-├── 02_Bronze_To_Silver.ipynb             # Limpeza, deduplicação e padronização
-├── 03_Silver_To_Gold.ipynb               # Data Marts e rankings de negócio
+├── Atividade_land_to_bronze.ipynb            # Ingestão dos CSVs e API do BCB
+├── Atividade_bronze_to_silver.ipynb             # Limpeza, deduplicação e padronização
+├── Atividade_silver_to_gold.ipynb               # Data Marts e rankings de negócio
 ├── pipeline_medalhao_olist.yaml          # Workflow Databricks (3 tasks sequenciais)
 ├── assets/
 │   └── execucao_job.png                  # Screenshot da execução do Job
@@ -79,7 +79,7 @@ Landing (CSVs + API)
 O pipeline é orquestrado via **Databricks Workflows** com 3 tasks sequenciais:
 
 ```
-01_landing_to_bronze  →  02_bronze_to_silver  →  03_silver_to_gold
+Atividade_land_to_bronze  →  Atividade_bronze_to_silver  →  Atividade_silver_to_gold
 ```
 
 - **Trigger:** Diário às 13:00 (America/Sao_Paulo)
